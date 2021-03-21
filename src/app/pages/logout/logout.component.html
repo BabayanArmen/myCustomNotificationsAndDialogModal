@@ -1,0 +1,15 @@
+<p>logout works!</p>
+<button (click)="openMyDialog2()">open my custom dialog</button>
+
+
+<div id="dialogContainer2" #myDialogContainer2 class="myDialogContainer" (click)="closeDialog2($event)">
+    <div id="dialog2" class="myDialog">
+        <div class="header">
+            <span style="width: 100%; padding: 5px;">Title</span>
+            <span style="float: right; padding-right: 12px; cursor: pointer;" id="dialogCloseButton2" (click)="closeDialog2($event)">&#10005;</span>
+        </div>
+        <div class="content">
+            <p>hello world</p>
+        </div>
+    </div>
+</div>
